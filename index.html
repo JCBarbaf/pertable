@@ -1,0 +1,2008 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+	<head>
+		<link rel="stylesheet" href="css/tabla_periodica.css">
+		<link rel="icon" type="image/x-icon" href="img/favicon.png">
+		<meta charset="utf-8">
+		<meta name="author" content="Juan Carlos Barba Fernández">
+		<meta name="Keywords" content="tabla periódica, elementos, atomos, interactiva">
+		<meta name="description" content="Tabla periódica de los elementos interactiva">
+		<title>Tabla periódica</title>
+		<script src="../js/script.js"></script>
+		<style>
+			
+		</style>
+		<script>
+			
+		</script>
+	</head>
+	<body>
+		<!-- https://www.w3schools.com/howto/howto_css_modals.asp -->
+		<h2>Haz clic en un elemento para verlo ampliado</h2>
+		<table>
+			<tr>
+				<td class="nomet" id="h" onclick="ampliar('h');">
+					<div class="flexbox">
+						<span class="atmass">
+							1.008
+						</span>
+						<span class="numat">
+							1
+						</span>
+					</div>
+					<div class="atsim">
+						H
+					</div>
+					<div class="atname">
+						Hidrógeno
+					</div>
+				</td>
+				<th colspan="16" class="vacio"></th>
+				<td class="gasnoble" id="he" onclick="ampliar('he');">
+					<div class="flexbox">
+						<span class="atmass">
+							4.003
+						</span>
+						<span class="numat">
+							2
+						</span>
+					</div>
+					<div class="atsim">
+						He
+					</div>
+					<div class="atname">
+						Helio
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="metalcal" id="li" onclick="ampliar('li');">
+					<div class="flexbox">
+						<span class="atmass">
+							6.941
+						</span>
+						<span class="numat">
+							3
+						</span>
+					</div>
+					<div class="atsim">
+						Li
+					</div>
+					<div class="atname">
+						Litio
+					</div>
+				</td>
+				<td class="alcalter" id="be" onclick="ampliar('be');">
+					<div class="flexbox">
+						<span class="atmass">
+							9.012
+						</span>
+						<span class="numat">
+							4
+						</span>
+					</div>
+					<div class="atsim">
+						Be
+					</div>
+					<div class="atname">
+						Berillio
+					</div>
+				</td>
+				<th colspan="10" class="vacio"></th>
+				<td class="metaloides" id="b" onclick="ampliar('b');">
+					<div class="flexbox">
+						<span class="atmass">
+							10.811
+						</span>
+						<span class="numat">
+							5
+						</span>
+					</div>
+					<div class="atsim">
+						B
+					</div>
+					<div class="atname">
+						Boro
+					</div>
+				</td>
+				<td class="nomet" id="c" onclick="ampliar('c');">
+					<div class="flexbox">
+						<span class="atmass">
+							12.011
+						</span>
+						<span class="numat">
+							6
+						</span>
+					</div>
+					<div class="atsim">
+						C
+					</div>
+					<div class="atname">
+						Carbono
+					</div>
+				</td>
+				<td class="nomet" id="n" onclick="ampliar('n');">
+					<div class="flexbox">
+						<span class="atmass">
+							14.007
+						</span>
+						<span class="numat">
+							7
+						</span>
+					</div>
+					<div class="atsim">
+						N
+					</div>
+					<div class="atname">
+						Nitrógeno
+					</div>
+				</td>
+				<td class="nomet" id="o" onclick="ampliar('o');">
+					<div class="flexbox">
+						<span class="atmass">
+							15.999
+						</span>
+						<span class="numat">
+							8
+						</span>
+					</div>
+					<div class="atsim">
+						O
+					</div>
+					<div class="atname">
+						Oxígeno
+					</div>
+				</td>
+				<td class="halogenos" id="f" onclick="ampliar('f');">
+					<div class="flexbox">
+						<span class="atmass">
+							18.998
+						</span>
+						<span class="numat">
+							9
+						</span>
+					</div>
+					<div class="atsim">
+						F
+					</div>
+					<div class="atname">
+						Flúor
+					</div>
+				</td>
+				<td class="gasnoble" id="ne" onclick="ampliar('ne');">
+					<div class="flexbox">
+						<span class="atmass">
+							20.180
+						</span>
+						<span class="numat">
+							10
+						</span>
+					</div>
+					<div class="atsim">
+						Ne
+					</div>
+					<div class="atname">
+						Neón
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="metalcal" id="na" onclick="ampliar('na');">
+					<div class="flexbox">
+						<span class="atmass">
+							22.990
+						</span>
+						<span class="numat">
+							11
+						</span>
+					</div>
+					<div class="atsim">
+						Na
+					</div>
+					<div class="atname">
+						Sodio
+					</div>
+				</td>
+				<td class="alcalter" id="mg" onclick="ampliar('mg');">
+					<div class="flexbox">
+						<span class="atmass">
+							24.305
+						</span>
+						<span class="numat">
+							12
+						</span>
+					</div>
+					<div class="atsim">
+						Mg
+					</div>
+					<div class="atname">
+						Magnesio
+					</div>
+				</td>
+				<td colspan="10" class="vacio"></td>
+				<td class="metales" id="al" onclick="ampliar('al');">
+					<div class="flexbox">
+						<span class="atmass">
+							26.982
+						</span>
+						<span class="numat">
+							13
+						</span>
+					</div>
+					<div class="atsim">
+						Al
+					</div>
+					<div class="atname">
+						Aluminio
+					</div>
+				</td>
+				<td class="metaloides" id="si" onclick="ampliar('si');">
+					<div class="flexbox">
+						<span class="atmass">
+							28.086
+						</span>
+						<span class="numat">
+							14
+						</span>
+					</div>
+					<div class="atsim">
+						Si
+					</div>
+					<div class="atname">
+						Silicio
+					</div>
+				</td>
+				<td class="nomet" id="p" onclick="ampliar('p');">
+					<div class="flexbox">
+						<span class="atmass">
+							30.977
+						</span>
+						<span class="numat">
+							15
+						</span>
+					</div>
+					<div class="atsim">
+						P
+					</div>
+					<div class="atname">
+						Fósforo
+					</div>
+				</td>
+				<td class="nomet" id="s" onclick="ampliar('s');">
+					<div class="flexbox">
+						<span class="atmass">
+							32.065
+						</span>
+						<span class="numat">
+							16
+						</span>
+					</div>
+					<div class="atsim">
+						S
+					</div>
+					<div class="atname">
+						Azufre
+					</div>
+				</td>
+				<td class="halogenos" id="cl" onclick="ampliar('cl');">
+					<div class="flexbox">
+						<span class="atmass">
+							35.453
+						</span>
+						<span class="numat">
+							17
+						</span>
+					</div>
+					<div class="atsim">
+						Cl
+					</div>
+					<div class="atname">
+						Cloro
+					</div>
+				</td>
+				<td class="gasnoble" id="ar" onclick="ampliar('ar');">
+					<div class="flexbox">
+						<span class="atmass">
+							39.948
+						</span>
+						<span class="numat">
+							18
+						</span>
+					</div>
+					<div class="atsim">
+						Ar
+					</div>
+					<div class="atname">
+						Argón
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="metalcal" id="k" onclick="ampliar('k');">
+					<div class="flexbox">
+						<span class="atmass">
+							39.098
+						</span>
+						<span class="numat">
+							19
+						</span>
+					</div>
+					<div class="atsim">
+						K
+					</div>
+					<div class="atname">
+						Potasio
+					</div>
+				</td>
+				<td class="alcalter" id="ca" onclick="ampliar('ca');">
+					<div class="flexbox">
+						<span class="atmass">
+							40.078
+						</span>
+						<span class="numat">
+							20
+						</span>
+					</div>
+					<div class="atsim">
+						Ca
+					</div>
+					<div class="atname">
+						Calcio
+					</div>
+				</td>
+				<td class="mettras" id="sc" onclick="ampliar('sc');">
+					<div class="flexbox">
+						<span class="atmass">
+							44.956
+						</span>
+						<span class="numat">
+							21
+						</span>
+					</div>
+					<div class="atsim">
+						Sc
+					</div>
+					<div class="atname">
+						Escandio
+					</div>
+				</td>
+				<td class="mettras" id="ti" onclick="ampliar('ti');">
+					<div class="flexbox">
+						<span class="atmass">
+							47.867
+						</span>
+						<span class="numat">
+							22
+						</span>
+					</div>
+					<div class="atsim">
+						Ti
+					</div>
+					<div class="atname">
+						Titanio
+					</div>
+				</td>
+				<td class="mettras" id="v" onclick="ampliar('v');">
+					<div class="flexbox">
+						<span class="atmass">
+							50.942
+						</span>
+						<span class="numat">
+							23
+						</span>
+					</div>
+					<div class="atsim">
+						V
+					</div>
+					<div class="atname">
+						Vanadio
+					</div>
+				</td>
+				<td class="mettras" id="cr" onclick="ampliar('cr');">
+					<div class="flexbox">
+						<span class="atmass">
+							51.996
+						</span>
+						<span class="numat">
+							24
+						</span>
+					</div>
+					<div class="atsim">
+						Cr
+					</div>
+					<div class="atname">
+						Cromo
+					</div>
+				</td>
+				<td class="mettras" id="mn" onclick="ampliar('mn');">
+					<div class="flexbox">
+						<span class="atmass">
+							54.938
+						</span>
+						<span class="numat">
+							25
+						</span>
+					</div>
+					<div class="atsim">
+						Mn
+					</div>
+					<div class="atname">
+						Manganeso
+					</div>
+				</td>
+				<td class="mettras" id="fe" onclick="ampliar('fe');">
+					<div class="flexbox">
+						<span class="atmass">
+							55.845
+						</span>
+						<span class="numat">
+							26
+						</span>
+					</div>
+					<div class="atsim">
+						Fe
+					</div>
+					<div class="atname">
+						Hierro
+					</div>
+				</td>
+				<td class="mettras" id="co" onclick="ampliar('co');">
+					<div class="flexbox">
+						<span class="atmass">
+							58.933
+						</span>
+						<span class="numat">
+							27
+						</span>
+					</div>
+					<div class="atsim">
+						Co
+					</div>
+					<div class="atname">
+						Cobalto
+					</div>
+				</td>
+				<td class="mettras" id="ni" onclick="ampliar('ni');">
+					<div class="flexbox">
+						<span class="atmass">
+							58.693
+						</span>
+						<span class="numat">
+							28
+						</span>
+					</div>
+					<div class="atsim">
+						Ni
+					</div>
+					<div class="atname">
+						Níquel
+					</div>
+				</td>
+				<td class="mettras" id="cu" onclick="ampliar('cu');">
+					<div class="flexbox">
+						<span class="atmass">
+							63.546
+						</span>
+						<span class="numat">
+							29
+						</span>
+					</div>
+					<div class="atsim">
+						Cu
+					</div>
+					<div class="atname">
+						Cobre
+					</div>
+				</td>
+				<td class="mettras" id="zn" onclick="ampliar('zn');">
+					<div class="flexbox">
+						<span class="atmass">
+							65.38
+						</span>
+						<span class="numat">
+							30
+						</span>
+					</div>
+					<div class="atsim">
+						Zn
+					</div>
+					<div class="atname">
+						Zinc
+					</div>
+				</td>
+				<td class="metales" id="ga" onclick="ampliar('ga');">
+					<div class="flexbox">
+						<span class="atmass">
+							69.723
+						</span>
+						<span class="numat">
+							31
+						</span>
+					</div>
+					<div class="atsim">
+						Ga
+					</div>
+					<div class="atname">
+						Galio
+					</div>
+				</td>
+				<td class="metaloides" id="ge" onclick="ampliar('ge');">
+					<div class="flexbox">
+						<span class="atmass">
+							72.64
+						</span>
+						<span class="numat">
+							32
+						</span>
+					</div>
+					<div class="atsim">
+						Ge
+					</div>
+					<div class="atname">
+						Germanio
+					</div>
+				</td>
+				<td class="metaloides" id="as" onclick="ampliar('as');">
+					<div class="flexbox">
+						<span class="atmass">
+							74.922
+						</span>
+						<span class="numat">
+							33
+						</span>
+					</div>
+					<div class="atsim">
+						As
+					</div>
+					<div class="atname">
+						Arsénico
+					</div>
+				</td>
+				<td class="nomet" id="se" onclick="ampliar('se');">
+					<div class="flexbox">
+						<span class="atmass">
+							78.96
+						</span>
+						<span class="numat">
+							34
+						</span>
+					</div>
+					<div class="atsim">
+						Se
+					</div>
+					<div class="atname">
+						Selenio
+					</div>
+				</td>
+				<td class="halogenos" id="br" onclick="ampliar('br');">
+					<div class="flexbox">
+						<span class="atmass">
+							79.904
+						</span>
+						<span class="numat">
+							35
+						</span>
+					</div>
+					<div class="atsim">
+						Br
+					</div>
+					<div class="atname">
+						Bromo
+					</div></td>
+				<td class="gasnoble" id="kr" onclick="ampliar('kr');">
+					<div class="flexbox">
+						<span class="atmass">
+							83.798
+						</span>
+						<span class="numat">
+							36
+						</span>
+					</div>
+					<div class="atsim">
+						Kr
+					</div>
+					<div class="atname">
+						Kriptón
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="metalcal" id="rb" onclick="ampliar('rb');">
+					<div class="flexbox">
+						<span class="atmass">
+							85.468
+						</span>
+						<span class="numat">
+							37
+						</span>
+					</div>
+					<div class="atsim">
+						Rb
+					</div>
+					<div class="atname">
+						Rubidio
+					</div>
+				</td>
+				<td class="alcalter" id="sr" onclick="ampliar('sr');">
+					<div class="flexbox">
+						<span class="atmass">
+							87.62
+						</span>
+						<span class="numat">
+							38
+						</span>
+					</div>
+					<div class="atsim">
+						Sr
+					</div>
+					<div class="atname">
+						Estroncio
+					</div>
+				</td>
+				<td class="mettras" id="y" onclick="ampliar('y');">
+					<div class="flexbox">
+						<span class="atmass">
+							88.906
+						</span>
+						<span class="numat">
+							39
+						</span>
+					</div>
+					<div class="atsim">
+						Y
+					</div>
+					<div class="atname">
+						Itrio
+					</div>
+				</td>
+				<td class="mettras" id="zr" onclick="ampliar('zr');">
+					<div class="flexbox">
+						<span class="atmass">
+							91.224
+						</span>
+						<span class="numat">
+							40
+						</span>
+					</div>
+					<div class="atsim">
+						Zr
+					</div>
+					<div class="atname">
+						Zirconio
+					</div>
+				</td>
+				<td class="mettras" id="nb" onclick="ampliar('nb');">
+					<div class="flexbox">
+						<span class="atmass">
+							92.906
+						</span>
+						<span class="numat">
+							41
+						</span>
+					</div>
+					<div class="atsim">
+						Nb
+					</div>
+					<div class="atname">
+						Niobio
+					</div>
+				</td>
+				<td class="mettras" id="mo" onclick="ampliar('mo');">
+					<div class="flexbox">
+						<span class="atmass">
+							95.96
+						</span>
+						<span class="numat">
+							42
+						</span>
+					</div>
+					<div class="atsim">
+						Mo
+					</div>
+					<div class="atname">
+						Molibdeno
+					</div>
+				</td>
+				<td class="mettras" id="tc" onclick="ampliar('tc');">
+					<div class="flexbox">
+						<span class="atmass">
+							98
+						</span>
+						<span class="numat">
+							43
+						</span>
+					</div>
+					<div class="atsim">
+						Tc
+					</div>
+					<div class="atname">
+						Tecnecio
+					</div>
+				</td>
+				<td class="mettras" id="ru" onclick="ampliar('ru');">
+					<div class="flexbox">
+						<span class="atmass">
+							101.07
+						</span>
+						<span class="numat">
+							44
+						</span>
+					</div>
+					<div class="atsim">
+						Ru
+					</div>
+					<div class="atname">
+						Rutenio
+					</div>
+				</td>
+				<td class="mettras" id="rh" onclick="ampliar('rh');">
+					<div class="flexbox">
+						<span class="atmass">
+							102.906
+						</span>
+						<span class="numat">
+							45
+						</span>
+					</div>
+					<div class="atsim">
+						Rh
+					</div>
+					<div class="atname">
+						Rodio
+					</div>
+				</td>
+				<td class="mettras" id="pd" onclick="ampliar('pd');">
+					<div class="flexbox">
+						<span class="atmass">
+							106.42
+						</span>
+						<span class="numat">
+							46
+						</span>
+					</div>
+					<div class="atsim">
+						Pd
+					</div>
+					<div class="atname">
+						Paladio
+					</div>
+				</td>
+				<td class="mettras" id="ag" onclick="ampliar('ag');">
+					<div class="flexbox">
+						<span class="atmass">
+							107.868
+						</span>
+						<span class="numat">
+							47
+						</span>
+					</div>
+					<div class="atsim">
+						Ag
+					</div>
+					<div class="atname">
+						Plata
+					</div>
+				</td>
+				<td class="mettras" id="cd" onclick="ampliar('cd');">
+					<div class="flexbox">
+						<span class="atmass">
+							112.441
+						</span>
+						<span class="numat">
+							48
+						</span>
+					</div>
+					<div class="atsim">
+						Cd
+					</div>
+					<div class="atname">
+						Cadmio
+					</div>
+				</td>
+				<td class="metales" id="in" onclick="ampliar('in');">
+					<div class="flexbox">
+						<span class="atmass">
+							114.818
+						</span>
+						<span class="numat">
+							49
+						</span>
+					</div>
+					<div class="atsim">
+						In
+					</div>
+					<div class="atname">
+						Indio
+					</div>
+				</td>
+				<td class="metales" id="sn" onclick="ampliar('sn');">
+					<div class="flexbox">
+						<span class="atmass">
+							118.710
+						</span>
+						<span class="numat">
+							50
+						</span>
+					</div>
+					<div class="atsim">
+						Sn
+					</div>
+					<div class="atname">
+						Estaño
+					</div>
+				</td>
+				<td class="metaloides" id="sb" onclick="ampliar('sb');">
+					<div class="flexbox">
+						<span class="atmass">
+							121.760
+						</span>
+						<span class="numat">
+							51
+						</span>
+					</div>
+					<div class="atsim">
+						Sb
+					</div>
+					<div class="atname">
+						Antimonio
+					</div>
+				</td>
+				<td class="metaloides" id="te" onclick="ampliar('te');">
+					<div class="flexbox">
+						<span class="atmass">
+							127.60
+						</span>
+						<span class="numat">
+							52
+						</span>
+					</div>
+					<div class="atsim">
+						Te
+					</div>
+					<div class="atname">
+						Telurio
+					</div>
+				</td>
+				<td class="halogenos" id="i" onclick="ampliar('i');">
+					<div class="flexbox">
+						<span class="atmass">
+							126.904
+						</span>
+						<span class="numat">
+							53
+						</span>
+					</div>
+					<div class="atsim">
+						I
+					</div>
+					<div class="atname">
+						Yodo
+					</div>
+				</td>
+				<td class="gasnoble" id="xe" onclick="ampliar('xe');">
+					<div class="flexbox">
+						<span class="atmass">
+							131.293
+						</span>
+						<span class="numat">
+							54
+						</span>
+					</div>
+					<div class="atsim">
+						Xe
+					</div>
+					<div class="atname">
+						Xenón
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="metalcal" id="cs" onclick="ampliar('cs');">
+					<div class="flexbox">
+						<span class="atmass">
+							132.905
+						</span>
+						<span class="numat">
+							55
+						</span>
+					</div>
+					<div class="atsim">
+						Cs
+					</div>
+					<div class="atname">
+						Cesio
+					</div>
+				</td>
+				<td class="alcalter" id="ba" onclick="ampliar('ba');">
+					<div class="flexbox">
+						<span class="atmass">
+							137.327
+						</span>
+						<span class="numat">
+							56
+						</span>
+					</div>
+					<div class="atsim">
+						Ba
+					</div>
+					<div class="atname">
+						Bario
+					</div>
+				</td>
+				<td class="lantanidos">
+					<div class="aparte">
+						57-71
+					</div>
+				</td>
+				<td class="mettras" id="hf" onclick="ampliar('hf');">
+					<div class="flexbox">
+						<span class="atmass">
+							178.49
+						</span>
+						<span class="numat">
+							72
+						</span>
+					</div>
+					<div class="atsim">
+						Hf
+					</div>
+					<div class="atname">
+						Haftio
+					</div>
+				</td>
+				<td class="mettras" id="ta" onclick="ampliar('ta');">
+					<div class="flexbox">
+						<span class="atmass">
+							180.948
+						</span>
+						<span class="numat">
+							73
+						</span>
+					</div>
+					<div class="atsim">
+						Ta
+					</div>
+					<div class="atname">
+						Tantalio
+					</div>
+				</td>
+				<td class="mettras" id="w" onclick="ampliar('w');">
+					<div class="flexbox">
+						<span class="atmass">
+							183.84
+						</span>
+						<span class="numat">
+							74
+						</span>
+					</div>
+					<div class="atsim">
+						W
+					</div>
+					<div class="atname">
+						Wolframio
+					</div>
+				</td>
+				<td class="mettras" id="re" onclick="ampliar('re');">
+					<div class="flexbox">
+						<span class="atmass">
+							186.207
+						</span>
+						<span class="numat">
+							75
+						</span>
+					</div>
+					<div class="atsim">
+						Re
+					</div>
+					<div class="atname">
+						Renio
+					</div>
+				</td>
+				<td class="mettras" id="os" onclick="ampliar('os');">
+					<div class="flexbox">
+						<span class="atmass">
+							190.23
+						</span>
+						<span class="numat">
+							76
+						</span>
+					</div>
+					<div class="atsim">
+						Os
+					</div>
+					<div class="atname">
+						Osmio
+					</div>
+				</td>
+				<td class="mettras" id="ir" onclick="ampliar('ir');">
+					<div class="flexbox">
+						<span class="atmass">
+							192.217
+						</span>
+						<span class="numat">
+							77
+						</span>
+					</div>
+					<div class="atsim">
+						Ir
+					</div>
+					<div class="atname">
+						Iridio
+					</div>
+				</td>
+				<td class="mettras" id="pt" onclick="ampliar('pt');">
+					<div class="flexbox">
+						<span class="atmass">
+							195.084
+						</span>
+						<span class="numat">
+							78
+						</span>
+					</div>
+					<div class="atsim">
+						Pt
+					</div>
+					<div class="atname">
+						Platino
+					</div>
+				</td>
+				<td class="mettras" id="au" onclick="ampliar('au');">
+					<div class="flexbox">
+						<span class="atmass">
+							196.967
+						</span>
+						<span class="numat">
+							79
+						</span>
+					</div>
+					<div class="atsim">
+						Au
+					</div>
+					<div class="atname">
+						Oro
+					</div>
+				</td>
+				<td class="mettras" id="hg" onclick="ampliar('hg');">
+					<div class="flexbox">
+						<span class="atmass">
+							200.59
+						</span>
+						<span class="numat">
+							80
+						</span>
+					</div>
+					<div class="atsim">
+						Hg
+					</div>
+					<div class="atname">
+						Mercurio
+					</div>
+				</td>
+				<td class="metales" id="tl" onclick="ampliar('tl');">
+					<div class="flexbox">
+						<span class="atmass">
+							204.383
+						</span>
+						<span class="numat">
+							81
+						</span>
+					</div>
+					<div class="atsim">
+						Tl
+					</div>
+					<div class="atname">
+						Talio
+					</div>
+				</td>
+				<td class="metales" id="pb" onclick="ampliar('pb');">
+					<div class="flexbox">
+						<span class="atmass">
+							207.2
+						</span>
+						<span class="numat">
+							82
+						</span>
+					</div>
+					<div class="atsim">
+						Pb
+					</div>
+					<div class="atname">
+						Plomo
+					</div>
+				</td>
+				<td class="metales" id="bi" onclick="ampliar('bi');">
+					<div class="flexbox">
+						<span class="atmass">
+							208.980
+						</span>
+						<span class="numat">
+							83
+						</span>
+					</div>
+					<div class="atsim">
+						Bi
+					</div>
+					<div class="atname">
+						Bismuto
+					</div>
+				</td>
+				<td class="metaloides" id="po" onclick="ampliar('po');">
+					<div class="flexbox">
+						<span class="atmass">
+							210
+						</span>
+						<span class="numat">
+							84
+						</span>
+					</div>
+					<div class="atsim">
+						Po
+					</div>
+					<div class="atname">
+						Polonio
+					</div>
+				</td>
+				<td class="halogenos" id="at" onclick="ampliar('at');">
+					<div class="flexbox">
+						<span class="atmass">
+							210
+						</span>
+						<span class="numat">
+							85
+						</span>
+					</div>
+					<div class="atsim">
+						At
+					</div>
+					<div class="atname">
+						Astato
+					</div>
+				</td>
+				<td class="gasnoble" id="rn" onclick="ampliar('rn');">
+					<div class="flexbox">
+						<span class="atmass">
+							220
+						</span>
+						<span class="numat">
+							86
+						</span>
+					</div>
+					<div class="atsim">
+						Rn
+					</div>
+					<div class="atname">
+						Radón
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="metalcal" id="fr" onclick="ampliar('fr');">
+					<div class="flexbox">
+						<span class="atmass">
+							223
+						</span>
+						<span class="numat">
+							87
+						</span>
+					</div>
+					<div class="atsim">
+						Fr
+					</div>
+					<div class="atname">
+						Francio
+					</div>
+				</td>
+				<td class="alcalter" id="ra" onclick="ampliar('ra');">
+					<div class="flexbox">
+						<span class="atmass">
+							226
+						</span>
+						<span class="numat">
+							88
+						</span>
+					</div>
+					<div class="atsim">
+						Ra
+					</div>
+					<div class="atname">
+						Radio
+					</div>
+				</td>
+				<td class="actinidos">
+					<div class="aparte">
+						89-103
+					</div>
+				</td>
+				<td class="mettras" id="rf" onclick="ampliar('rf');">
+					<div class="flexbox">
+						<span class="atmass">
+							261
+						</span>
+						<span class="numat">
+							104
+						</span>
+					</div>
+					<div class="atsim">
+						Rf
+					</div>
+					<div class="atname">
+						Rutherfordio
+					</div>
+				</td>
+				<td class="mettras" id="db" onclick="ampliar('db');">
+					<div class="flexbox">
+						<span class="atmass">
+							262
+						</span>
+						<span class="numat">
+							105
+						</span>
+					</div>
+					<div class="atsim">
+						Db
+					</div>
+					<div class="atname">
+						Dubnio
+					</div>
+				</td>
+				<td class="mettras" id="sg" onclick="ampliar('sg');">
+					<div class="flexbox">
+						<span class="atmass">
+							266
+						</span>
+						<span class="numat">
+							106
+						</span>
+					</div>
+					<div class="atsim">
+						Sg
+					</div>
+					<div class="atname">
+						Seabargio
+					</div>
+				</td>
+				<td class="mettras" id="bh" onclick="ampliar('bh');">
+					<div class="flexbox">
+						<span class="atmass">
+							264
+						</span>
+						<span class="numat">
+							107
+						</span>
+					</div>
+					<div class="atsim">
+						Bh
+					</div>
+					<div class="atname">
+						Bohrio
+					</div>
+				</td>
+				<td class="mettras" id="hs" onclick="ampliar('hs');">
+					<div class="flexbox">
+						<span class="atmass">
+							277
+						</span>
+						<span class="numat">
+							108
+						</span>
+					</div>
+					<div class="atsim">
+						Hs
+					</div>
+					<div class="atname">
+						Hassio
+					</div>
+				</td>
+				<td class="mettras" id="mt" onclick="ampliar('mt');">
+					<div class="flexbox">
+						<span class="atmass">
+							268
+						</span>
+						<span class="numat">
+							109
+						</span>
+					</div>
+					<div class="atsim">
+						Mt
+					</div>
+					<div class="atname">
+						Meitnerio
+					</div>
+				</td>
+				<td class="mettras" id="ds" onclick="ampliar('ds');">
+					<div class="flexbox">
+						<span class="atmass">
+							271
+						</span>
+						<span class="numat">
+							110
+						</span>
+					</div>
+					<div class="atsim">
+						Ds
+					</div>
+					<div class="atname">
+						Darmstadio
+					</div>
+				</td>
+				<td class="mettras" id="rg" onclick="ampliar('rg');">
+					<div class="flexbox">
+						<span class="atmass">
+							272
+						</span>
+						<span class="numat">
+							111
+						</span>
+					</div>
+					<div class="atsim">
+						Rg
+					</div>
+					<div class="atname">
+						Roentgenio
+					</div>
+				</td>
+				<td class="mettras" id="cn" onclick="ampliar('cn');">
+					<div class="flexbox">
+						<span class="atmass">
+							285
+						</span>
+						<span class="numat">
+							112
+						</span>
+					</div>
+					<div class="atsim">
+						Cn
+					</div>
+					<div class="atname">
+						Copernicio
+					</div>
+				</td>
+				<td class="metales" id="nh" onclick="ampliar('nh');">
+					<div class="flexbox">
+						<span class="atmass">
+							284
+						</span>
+						<span class="numat">
+							113
+						</span>
+					</div>
+					<div class="atsim">
+						Nh
+					</div>
+					<div class="atname">
+						Nihonio
+					</div>
+				</td>
+				<td class="metales" id="fl" onclick="ampliar('fl');">
+					<div class="flexbox">
+						<span class="atmass">
+							289
+						</span>
+						<span class="numat">
+							114
+						</span>
+					</div>
+					<div class="atsim">
+						Fl
+					</div>
+					<div class="atname">
+						Flerovio
+					</div>
+				</td>
+				<td class="metales" id="mc" onclick="ampliar('mc');">
+					<div class="flexbox">
+						<span class="atmass">
+							288
+						</span>
+						<span class="numat">
+							115
+						</span>
+					</div>
+					<div class="atsim">
+						Mc
+					</div>
+					<div class="atname">
+						Moscovio
+					</div>
+				</td>
+				<td class="metales" id="lv" onclick="ampliar('lv');">
+					<div class="flexbox">
+						<span class="atmass">
+							292
+						</span>
+						<span class="numat">
+							116
+						</span>
+					</div>
+					<div class="atsim">
+						Lv
+					</div>
+					<div class="atname">
+						Livermorio
+					</div>
+				</td>
+				<td class="halogenos" id="ts" onclick="ampliar('ts');">
+					<div class="flexbox">
+						<span class="atmass">
+							294
+						</span>
+						<span class="numat">
+							117
+						</span>
+					</div>
+					<div class="atsim">
+						Ts
+					</div>
+					<div class="atname">
+						Téneso
+					</div>
+				</td>
+				<td class="gasnoble" id="og" onclick="ampliar('og');">
+					<div class="flexbox">
+						<span class="atmass">
+							294
+						</span>
+						<span class="numat">
+							118
+						</span>
+					</div>
+					<div class="atsim">
+						Og
+					</div>
+					<div class="atname">
+						Oganesón
+					</div>
+				</td>
+			</tr>
+			<tr class="separacion">
+				<td colspan="18" class="vacio"></td>
+			</tr>
+			<tr>
+				<td colspan="3" class="vacio"></td>
+				<td class="lantanidos" id="la" onclick="ampliar('la');">
+					<div class="flexbox">
+						<span class="atmass">
+							138.905
+						</span>
+						<span class="numat">
+							57
+						</span>
+					</div>
+					<div class="atsim">
+						La
+					</div>
+					<div class="atname">
+						Lantano
+					</div>
+				</td>
+				<td class="lantanidos" id="ce" onclick="ampliar('ce');">
+					<div class="flexbox">
+						<span class="atmass">
+							140.116
+						</span>
+						<span class="numat">
+							58
+						</span>
+					</div>
+					<div class="atsim">
+						Ce
+					</div>
+					<div class="atname">
+						Cerio
+					</div>
+				</td>
+				<td class="lantanidos" id="pr" onclick="ampliar('pr');">
+					<div class="flexbox">
+						<span class="atmass">
+							140.908
+						</span>
+						<span class="numat">
+							59
+						</span>
+					</div>
+					<div class="atsim">
+						Pr
+					</div>
+					<div class="atname">
+						Praseodimio
+					</div>
+				</td>
+				<td class="lantanidos" id="nd" onclick="ampliar('nd');">
+					<div class="flexbox">
+						<span class="atmass">
+							144.242
+						</span>
+						<span class="numat">
+							60
+						</span>
+					</div>
+					<div class="atsim">
+						Nd
+					</div>
+					<div class="atname">
+						Neodimio
+					</div>
+				</td>
+				<td class="lantanidos" id="pm" onclick="ampliar('pm');">
+					<div class="flexbox">
+						<span class="atmass">
+							145
+						</span>
+						<span class="numat">
+							61
+						</span>
+					</div>
+					<div class="atsim">
+						Pm
+					</div>
+					<div class="atname">
+						Prometio
+					</div>
+				</td>
+				<td class="lantanidos" id="sm" onclick="ampliar('sm');">
+					<div class="flexbox">
+						<span class="atmass">
+							150.36
+						</span>
+						<span class="numat">
+							62
+						</span>
+					</div>
+					<div class="atsim">
+						Sm
+					</div>
+					<div class="atname">
+						Samario
+					</div>
+				</td>
+				<td class="lantanidos" id="eu" onclick="ampliar('eu');">
+					<div class="flexbox">
+						<span class="atmass">
+							151.964
+						</span>
+						<span class="numat">
+							63
+						</span>
+					</div>
+					<div class="atsim">
+						Eu
+					</div>
+					<div class="atname">
+						Europio
+					</div>
+				</td>
+				<td class="lantanidos" id="gd" onclick="ampliar('gd');">
+					<div class="flexbox">
+						<span class="atmass">
+							157.25
+						</span>
+						<span class="numat">
+							64
+						</span>
+					</div>
+					<div class="atsim">
+						Gd
+					</div>
+					<div class="atname">
+						Gadolinio
+					</div>
+				</td>
+				<td class="lantanidos" id="tb" onclick="ampliar('tb');">
+					<div class="flexbox">
+						<span class="atmass">
+							158.925
+						</span>
+						<span class="numat">
+							65
+						</span>
+					</div>
+					<div class="atsim">
+						Tb
+					</div>
+					<div class="atname">
+						Terbio
+					</div>
+				</td>
+				<td class="lantanidos" id="dy" onclick="ampliar('dy');">
+					<div class="flexbox">
+						<span class="atmass">
+							162.500
+						</span>
+						<span class="numat">
+							66
+						</span>
+					</div>
+					<div class="atsim">
+						Dy
+					</div>
+					<div class="atname">
+						Dispresio
+					</div>
+				</td>
+				<td class="lantanidos" id="ho" onclick="ampliar('ho');">
+					<div class="flexbox">
+						<span class="atmass">
+							164.930
+						</span>
+						<span class="numat">
+							67
+						</span>
+					</div>
+					<div class="atsim">
+						Ho
+					</div>
+					<div class="atname">
+						Holmio
+					</div>
+				</td>
+				<td class="lantanidos" id="er" onclick="ampliar('er');">
+					<div class="flexbox">
+						<span class="atmass">
+							167.259
+						</span>
+						<span class="numat">
+							68
+						</span>
+					</div>
+					<div class="atsim">
+						Er
+					</div>
+					<div class="atname">
+						Erbio
+					</div>
+				</td>
+				<td class="lantanidos" id="tm" onclick="ampliar('tm');">
+					<div class="flexbox">
+						<span class="atmass">
+							168.934
+						</span>
+						<span class="numat">
+							69
+						</span>
+					</div>
+					<div class="atsim">
+						Tm
+					</div>
+					<div class="atname">
+						Tulio
+					</div>
+				</td>
+				<td class="lantanidos" id="yb" onclick="ampliar('yb');">
+					<div class="flexbox">
+						<span class="atmass">
+							173.054
+						</span>
+						<span class="numat">
+							70
+						</span>
+					</div>
+					<div class="atsim">
+						Yb
+					</div>
+					<div class="atname">
+						Iterbio
+					</div>
+				</td>
+				<td class="lantanidos" id="lu" onclick="ampliar('lu');">
+					<div class="flexbox">
+						<span class="atmass">
+							174.967
+						</span>
+						<span class="numat">
+							71
+						</span>
+					</div>
+					<div class="atsim">
+						Lu
+					</div>
+					<div class="atname">
+						Lutecio
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" class="vacio"></td>
+				<td class="actinidos" id="ac" onclick="ampliar('ac');">
+					<div class="flexbox">
+						<span class="atmass">
+							227
+						</span>
+						<span class="numat">
+							89
+						</span>
+					</div>
+					<div class="atsim">
+						Ac
+					</div>
+					<div class="atname">
+						Actinio
+					</div>
+				</td>
+				<td class="actinidos" id="th" onclick="ampliar('th');">
+					<div class="flexbox">
+						<span class="atmass">
+							232.038
+						</span>
+						<span class="numat">
+							90
+						</span>
+					</div>
+					<div class="atsim">
+						Th
+					</div>
+					<div class="atname">
+						Torio
+					</div>
+				</td>
+				<td class="actinidos" id="pa" onclick="ampliar('pa');">
+					<div class="flexbox">
+						<span class="atmass">
+							231.036
+						</span>
+						<span class="numat">
+							91
+						</span>
+					</div>
+					<div class="atsim">
+						Pa
+					</div>
+					<div class="atname">
+						Protactinio
+					</div>
+				</td>
+				<td class="actinidos" id="u" onclick="ampliar('u');">
+					<div class="flexbox">
+						<span class="atmass">
+							238.029
+						</span>
+						<span class="numat">
+							92
+						</span>
+					</div>
+					<div class="atsim">
+						U
+					</div>
+					<div class="atname">
+						Uranio
+					</div>
+				</td>
+				<td class="actinidos" id="np" onclick="ampliar('np');">
+					<div class="flexbox">
+						<span class="atmass">
+							237
+						</span>
+						<span class="numat">
+							93
+						</span>
+					</div>
+					<div class="atsim">
+						Np
+					</div>
+					<div class="atname">
+						Neptanio
+					</div>
+				</td>
+				<td class="actinidos" id="pu" onclick="ampliar('pu');">
+					<div class="flexbox">
+						<span class="atmass">
+							244
+						</span>
+						<span class="numat">
+							94
+						</span>
+					</div>
+					<div class="atsim">
+						Pu
+					</div>
+					<div class="atname">
+						Plutonio
+					</div>
+				</td>
+				<td class="actinidos" id="am" onclick="ampliar('am');">
+					<div class="flexbox">
+						<span class="atmass">
+							243
+						</span>
+						<span class="numat">
+							95
+						</span>
+					</div>
+					<div class="atsim">
+						Am
+					</div>
+					<div class="atname">
+						Americio
+					</div>
+				</td>
+				<td class="actinidos" id="cm" onclick="ampliar('cm');">
+					<div class="flexbox">
+						<span class="atmass">
+							247
+						</span>
+						<span class="numat">
+							96
+						</span>
+					</div>
+					<div class="atsim">
+						Cm
+					</div>
+					<div class="atname">
+						Curio
+					</div>
+				</td>
+				<td class="actinidos" id="bk" onclick="ampliar('bk');">
+					<div class="flexbox">
+						<span class="atmass">
+							247
+						</span>
+						<span class="numat">
+							97
+						</span>
+					</div>
+					<div class="atsim">
+						Bk
+					</div>
+					<div class="atname">
+						Berkelio
+					</div>
+				</td>
+				<td class="actinidos" id="cf" onclick="ampliar('cf');">
+					<div class="flexbox">
+						<span class="atmass">
+							251
+						</span>
+						<span class="numat">
+							98
+						</span>
+					</div>
+					<div class="atsim">
+						Cf
+					</div>
+					<div class="atname">
+						Californio
+					</div>
+				</td>
+				<td class="actinidos" id="es" onclick="ampliar('es');">
+					<div class="flexbox">
+						<span class="atmass">
+							252
+						</span>
+						<span class="numat">
+							99
+						</span>
+					</div>
+					<div class="atsim">
+						Es
+					</div>
+					<div class="atname">
+						Einstenio
+					</div>
+				</td>
+				<td class="actinidos" id="fm" onclick="ampliar('fm');">
+					<div class="flexbox">
+						<span class="atmass">
+							257
+						</span>
+						<span class="numat">
+							100
+						</span>
+					</div>
+					<div class="atsim">
+						Fm
+					</div>
+					<div class="atname">
+						Fermio
+					</div>
+				</td>
+				<td class="actinidos" id="md" onclick="ampliar('md');">
+					<div class="flexbox">
+						<span class="atmass">
+							258
+						</span>
+						<span class="numat">
+							101
+						</span>
+					</div>
+					<div class="atsim">
+						Md
+					</div>
+					<div class="atname">
+						Mendelevio
+					</div>
+				</td>
+				<td class="actinidos" id="no" onclick="ampliar('no');">
+					<div class="flexbox">
+						<span class="atmass">
+							259
+						</span>
+						<span class="numat">
+							102
+						</span>
+					</div>
+					<div class="atsim">
+						No
+					</div>
+					<div class="atname">
+						Nobelio
+					</div>
+				</td>
+				<td class="actinidos" id="lr" onclick="ampliar('lr');">
+					<div class="flexbox">
+						<span class="atmass">
+							262
+						</span>
+						<span class="numat">
+							103
+						</span>
+					</div>
+					<div class="atsim">
+						Lr
+					</div>
+					<div class="atname">
+						Laurencio
+					</div>
+				</td>
+			</tr>
+		</table>
+		<div class="leyenda">
+			<p>
+				<svg width="30" height="30" class="metalcal">
+				</svg>
+				= Metales Alcalinos
+				<svg width="30" height="30" class="alcalter">
+				</svg>
+				= Alcalinotérreos
+				<svg  width="30" height="30" class="mettras">
+				</svg>
+				= Metales de Transición
+				<svg width="30" height="30" class="metales">
+				</svg>
+				= Otros Metales
+				<svg width="30" height="30" class="metaloides">
+				</svg>
+				= Metaloides
+				<svg width="30" height="30" class="nomet">
+				</svg>
+				= No Metales
+				<svg width="30" height="30" class="halogenos">
+				</svg>
+				= Halógenos
+				<svg width="30" height="30" class="gasnoble">
+				</svg>
+				= Gas Noble
+				<svg width="30" height="30" class="lantanidos">
+				</svg>
+				= Lantanidos
+				<svg width="30" height="30" class="actinidos">
+				</svg>
+				= Actínidos
+			</p>
+		</div>
+		<div id="modal">
+			<div class="ampliacion" id="amp_id">
+				<div class="cerrar" onclick="closeme()">&times;</div>
+				<table>
+					<tr>
+						<td id="amp_td" class="lantanidos">
+							<div class="flexbox">
+								<span class="atmass">
+									262
+								</span>
+								<span class="numat">
+									103
+								</span>
+							</div>
+							<div class="atsim">
+								Lr
+							</div>
+							<div class="atname">
+								Laurencio
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!-- <input type="button" onclick="ampliar('hidrogeno')" value="pulsa aquí!"> -->
+	</body>
+</html>

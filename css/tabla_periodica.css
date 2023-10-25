@@ -1,0 +1,191 @@
+body{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #feca91;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+table{
+    /*text-align: center;*/
+    width: 100%;
+    border-collapse: collapse;
+    font-weight: bold;
+   
+}
+td{
+    /*position: relative;*/
+    border: 1px solid;
+    /* height: 60px; */
+    width: 4em;
+    cursor: pointer;
+    /*padding: 30px;*/
+}
+tr{
+    height: 5.4em;
+}
+svg {
+    border: 1px solid;
+}
+.nohover{
+    pointer-events: none;
+    cursor: none;
+}
+.flexbox {
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.vacio{
+    border: none;
+}
+.metalcal{
+    background-color: #fabc31;
+}
+.metalcal:hover{
+    background-color: #cc9927;
+}
+.alcalter{
+    background-color: #fb838c;
+}
+.alcalter:hover{
+    background-color: #cc6a71;
+}
+.metales{
+    background-color: #feb7ef;
+}
+.metales:hover{
+    background-color: #cc92bf;
+}
+.mettras{
+    background-color: #fcea7c;
+}
+.mettras:hover{
+    background-color: #ccbd64;
+}
+.lantanidos{
+    background-color: #03fbfd;
+}
+.lantanidos:hover{
+    background-color: #02cacc;
+}
+.actinidos{
+    background-color: #08affd;
+}
+.actinidos:hover{
+    background-color: #068dcc;
+}
+.metaloides{
+    background-color: #a1fec7;
+}
+.metaloides:hover{
+    background-color: #81cc9f;
+}
+.nomet{
+    background-color: #fedb9b;
+}
+.nomet:hover{
+    background-color: #ccaf7c;
+}
+.halogenos{
+    background-color: #70f69f;
+}
+.halogenos:hover{
+    background-color: #5ccc83;
+}
+.gasnoble{
+    background-color: #d1a990;
+}
+.gasnoble:hover{
+    background-color: #b2907a;
+}
+.aparte{
+    font-size: 12px;
+    text-align: center;
+}
+.separacion td{
+    padding: 2em;
+}
+.numat{
+    font-size: 0.7em;
+    padding: 0.2em;
+    margin-top: -2em;
+}
+.atsim{
+    font-size: 1.6em;
+    text-align: center;
+    vertical-align: center;
+}
+.atname{
+    font-size: 0.6em;
+    text-align: center;
+    vertical-align: bottom;
+}
+.atmass{
+    font-size: 0.5em;
+    padding: 0.2em;
+    margin-top: -2.5em;
+}
+.leyenda {
+    font-size: 30px;
+    vertical-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    pointer-events: none;
+}
+.ampliacion table {
+    pointer-events: none;
+    margin-left: 10%;
+    width: 20em;
+    height: 25em;
+}
+.ampliacion .numat {
+    font-size: 2em;
+    margin-top: -3em;
+}
+.ampliacion .atsim{
+   font-size: 8em;
+}
+.ampliacion .atname{
+    font-size: 2em;
+ }
+ .ampliacion .atmass{
+    font-size: 1.8em;
+    margin-top: -3.5em;
+ }
+ #modal {
+     display: none;
+     position: absolute;
+     z-index: 1;
+     left: 0;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     /* width: 100%; */
+     /* height: 123%; */
+     overflow: auto;
+     background-color: rgba(0,0,0,0.4);
+    }
+.ampliacion {
+    position: absolute;
+    width: 20%;
+    left: 0;
+    right: 0;
+    margin: 5% auto;
+}
+.cerrar{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 40px;
+    background-color: rgb(66, 66, 66);
+    color: grey;
+    margin: 0;
+    cursor: pointer;
+}
+.ampliacion table {
+    margin: 0;
+}
